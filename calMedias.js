@@ -67,7 +67,7 @@ function atualizarTabela() {
 function atualizarMediaFinal () {
     const mediaFinal = calculaMediaFinal ();
     
-    document.getElementById('mediaFinalValor').innerHTML = mediaFinal;
+    document.getElementById('mediaFinalValor').innerHTML = mediaFinal.toFixed(2); //toFixed para limitar as casas decimais da media das notas.
     document.getElementById('mediaFinalResultado').innerHTML = mediaFinal >= notaMinima ? spanAprov : spanReprov;
 }
 
